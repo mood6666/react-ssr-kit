@@ -7,7 +7,6 @@ import compress from 'koa-compress'
 import convert from 'koa-convert'
 
 const app = new Koa()
-
 app.keys = ['this is a fucking secret']
 app.use(convert(session(app)))
 app.use(compress())

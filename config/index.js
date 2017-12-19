@@ -1,5 +1,7 @@
 /**
- * 返回配置信息
+ * Created at 16/4/11.
+ * @Author Ling.
+ * @Email i@zeroling.com
  */
 import fs from 'fs'
 import lodash, { isPlainObject, defaultsDeep } from 'lodash'
@@ -21,6 +23,5 @@ fs.readdirSync(__dirname).map(filename => {
 cfgs.push(defaultConfig)
 const config = defaultsDeep.apply(lodash, cfgs)
 
-//用于调试日志记录
 debug(config)
 export default config

@@ -1,5 +1,7 @@
 /**
- * Server端的默认配置
+ * Created at 16/4/11.
+ * @Author Ling.
+ * @Email i@zeroling.com
  */
 import path from 'path'
 
@@ -8,7 +10,7 @@ export default {
   rootPath,
   publicPath: '/public',
   staticPath: '/public/static',
-  port: 3099,
+  port: 9999,
   db: {
     dialect: 'sqlite',
     username: '',

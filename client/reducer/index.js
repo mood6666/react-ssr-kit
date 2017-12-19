@@ -1,6 +1,5 @@
 
 import { combineReducers } from 'redux'
-import counter from './counter'
 
 function one(state={
     list: [],
@@ -13,7 +12,6 @@ function one(state={
                 list: action.list,
                 isLoad: true,
             }
-
         case 'aaaaaa':
             console.log('aaaaa')
             return {
@@ -23,11 +21,8 @@ function one(state={
         default:
             return state
     }
-
-
 }
 
 export default combineReducers({
-  counter,
     one
 })

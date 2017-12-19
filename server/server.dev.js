@@ -37,7 +37,6 @@ const app = require('./app.js'),
     devMiddleware = require('koa-webpack-dev-middleware'),
     hotMiddleware = require('koa-webpack-hot-middleware'),
     views = require('koa-views'),
-    clientRoute = require('./middlewares/clientRoute'),
     config = require('../build/webpack.dev.config'),
     port = process.env.port || 3000,
     compiler = webpack(config)

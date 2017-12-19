@@ -8,26 +8,19 @@ if (typeof require.ensure !== 'function') {
 const routes = {
     childRoutes: [{
         path: '/',
-        component: require('./common/containers/Root'),
+        component: require('./layout'),
         indexRoute: {
             getComponent(nextState, callback) {
                 require.ensure([], require => {
-                    callback(null, require('./home/containers/App'))
-                }, 'home')
+                    callback(null, require('./containers/App'))
+                }, 'app')
             }
         },
         childRoutes: [{
-            path: 'explore',
-            getComponent(nextState, callback) {
-                require.ensure([], require => {
-                    callback(null, require('./explore/containers/App'))
-                }, 'explore')
-            }
-        }, {
             path: 'about',
             getComponent(nextState, callback) {
                 require.ensure([], require => {
-                    callback(null, require('./about/containers/App'))
+                    callback(null, require('./containers/About'))
                 }, 'about')
             }
         }]
