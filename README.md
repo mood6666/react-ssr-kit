@@ -1,7 +1,7 @@
 # react-ssr-kit
 a little perfect server render kit for react  (   比较完美的react服务端渲染脚手架  )
 
-##创作背景
+##  背景故事
 
 +   说实话很难受，react 服务端渲染找了很多开源方案，感觉都不符合自己的要求。next.js, react-starter-kit等等，感觉都差了那么点意思。
 +   next.js其实是一套很好的方案，但是还是有些局限性，我个人不太喜欢使用黑盒和强约定。放弃最大的原因是，在它的初始化函数里没有让我找到同构的感觉，

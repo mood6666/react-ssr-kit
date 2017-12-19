@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410ba1bd-ee8f-4114-b4b5-37155cbba39b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/about/components/SectionMain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/about/containers/App.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/about/sass/App.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/about/sass/SectionMain.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/actions/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/assets/avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/components/Header.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/components/Main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/components/Navbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/constants/ActionTypes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/containers/Common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/containers/DevTools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/containers/Root.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/containers/Root.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/sass/Common.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/sass/Header.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/sass/Main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/sass/Navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/sass/global.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/store/configureStore.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/store/configureStore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/common/store/configureStore.prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/explore/components/SectionMain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/explore/containers/App.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/explore/sass/App.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/explore/sass/SectionMain.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/home/components/SectionMain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/home/containers/App.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/home/sass/App.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/home/sass/SectionMain.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/reducers/counter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/reducers/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/shared/date-fns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/shared/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/store/configureStore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/controllers/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/middlewares/clientRoute.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/serverRenderCtrl.js" afterPath="$PROJECT_DIR$/server/controllers/serverRenderCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.dev.js" afterPath="$PROJECT_DIR$/server/server.dev.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/config/default.js" afterPath="$PROJECT_DIR$/config/default.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -139,8 +94,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="288">
-                    <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <first_editor relative-caret-position="96">
+                    <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -517,12 +472,12 @@
       <option name="presentableId" value="Default" />
       <updated>1510283750452</updated>
       <workItem from="1510283751972" duration="13709000" />
-      <workItem from="1513597513785" duration="22839000" />
+      <workItem from="1513597513785" duration="23084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36548000" />
+    <option name="totallyTimeSpent" value="36793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -976,8 +931,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <first_editor relative-caret-position="96">
+            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
