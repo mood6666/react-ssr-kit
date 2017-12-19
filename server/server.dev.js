@@ -37,11 +37,11 @@ const app = require('./app.js'),
     devMiddleware = require('koa-webpack-dev-middleware'),
     hotMiddleware = require('koa-webpack-hot-middleware'),
     views = require('koa-views'),
-    router = require('./routes'),
     clientRoute = require('./middlewares/clientRoute'),
     config = require('../build/webpack.dev.config'),
     port = process.env.port || 3000,
     compiler = webpack(config)
+    router = require('./routes')
 
 // Webpack hook event to write html file into `/views/dev` from `/views/tpl` due to server render
 compiler.plugin('emit', (compilation, callback) => {
@@ -59,13 +59,11 @@ compiler.plugin('emit', (compilation, callback) => {
 })
 
 app.use(views(path.resolve(__dirname, '../views/dev'), {map: {html: 'ejs'}}))
-app.use(clientRoute)
-app.use(router.routes())
-app.use(router.allowedMethods())
+app.use(router)
 console.log(`\n==> 🌎  Listening on port ${port}. Open up http://localhost:${port}/ in your browser.\n`)
 app.use(convert(devMiddleware(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
 })))
 app.use(convert(hotMiddleware(compiler)))
-app.listen(port)
+app.listen('9999')
