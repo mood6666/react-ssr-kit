@@ -3,6 +3,9 @@ const path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
+var autoprefixer = require('autoprefixer')
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     devtool: 'eval-source-map',
     context: path.resolve(__dirname, '..'),
@@ -26,47 +29,61 @@ module.exports = {
         publicPath: '/'
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel',
+            loader: 'babel-loader',
             query: {
                 presets: ['es2015', 'react', 'stage-0', 'react-hmre'],
                 plugins: ['transform-runtime', 'add-module-exports'],
                 cacheDirectory: true
             }
         }, {
+            test: /\.css$/,
+            use: [
+                'to-string-loader',
+                'css-loader'
+            ]
+        }, {
             test: /\.scss$/,
-            loaders: [
-                'style',
-                'css?modules&camelCase&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:8]',
-                'sass'
+            use: [
+                "style-loader",
+                "css-loader",
+                "sass-loader",
             ]
         }, {
             test: /\.(jpg|png|gif|webp)$/,
             loader: 'url?limit=8000'
         }, {
-            test: /\.json$/,
-            loader: 'json'
-        }, {
             test: /\.html$/,
-            loader: 'html?minimize=false'
+            use: [{
+                loader: 'html-loader',
+                options: {
+                    minimize: false,
+                    //开启link的替换
+                    attrs: ['img:src', 'link:href']
+                }
+            }],
         }]
     },
-    resolve: {extensions: ['', '.js', '.json', '.scss']},
+    resolve: {extensions: ['.js', '.css', '.scss']},
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),  // 提升运行效率
+        new webpack.optimize.ModuleConcatenationPlugin(), // 提升运行效率
         new webpack.optimize.CommonsChunkPlugin({
             names: ['vendor', 'manifest'],
             filename: '[name].js'
         }),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)}),
         new HtmlWebpackPlugin({
             filename: '../views/dev/index.html',
             template: './views/tpl/index.tpl.html'
         }),
+        new CopyWebpackPlugin([{
+            from: './static',
+            to: 'static',
+        }]),
         new ProgressBarPlugin({summary: false})
     ]
 }

@@ -12,7 +12,7 @@ require('babel-register')({
 
 // Css require hook
 require('css-modules-require-hook')({
-    extensions: ['.scss'],
+    extensions: ['.scss', '.css'],
     preprocessCss: (data, filename) =>
         require('node-sass').renderSync({
             data,
@@ -59,7 +59,6 @@ compiler.plugin('emit', (compilation, callback) => {
 
 app.use(views(path.resolve(__dirname, '../views/dev'), {map: {html: 'ejs'}}))
 app.use(router)
-console.log(`\n==> 🌎  Listening on port ${port}. Open up http://localhost:${port}/ in your browser.\n`)
 app.use(convert(devMiddleware(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath

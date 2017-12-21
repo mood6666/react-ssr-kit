@@ -1,6 +1,6 @@
 import React, {Children, Component, cloneElement} from 'react'
 
-class App extends Component {
+class Layout extends Component {
     render() {
         const {children, ...props} = this.props;
 
@@ -17,5 +17,5 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Layout;
 

@@ -4,25 +4,20 @@ if (typeof require.ensure !== 'function') {
         callback(require)
     }
 }
+import Layout from './layout/index'
+import App from './containers/App'
+import About from './containers/About'
 
 const routes = {
     childRoutes: [{
         path: '/',
-        component: require('./layout'),
+        component: Layout,
         indexRoute: {
-            getComponent(nextState, callback) {
-                require.ensure([], require => {
-                    callback(null, require('./containers/App'))
-                }, 'app')
-            }
+            component: App
         },
         childRoutes: [{
             path: 'about',
-            getComponent(nextState, callback) {
-                require.ensure([], require => {
-                    callback(null, require('./containers/About'))
-                }, 'about')
-            }
+            component: About
         }]
     }]
 }
